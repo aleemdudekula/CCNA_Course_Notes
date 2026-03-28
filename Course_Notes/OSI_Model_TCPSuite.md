@@ -178,3 +178,14 @@ Same-Layer Interactions:
 Example:
 
 The Application Layer of YouTube's web server and your PC's browser.
+
+🔁 How Data Actually Moves (end-to-end)
+
+Let’s say you open Google:
+
+Application → creates HTTP request
+Transport → wraps it in TCP
+Internet → adds IP address
+Network Access → sends bits over wire/Wi-Fi
+
+➡️ On the other side → reversed process
