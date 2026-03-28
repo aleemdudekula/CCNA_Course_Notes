@@ -36,6 +36,7 @@ Mnemonic to help remember the Data Layer Names / Order
 - This Layer is closest to end user.
 - Interacts with software applications.
 - HTTP and HTTPS are Layer 7 protocols
+- Protocols: HTTP, FTP, SMTP, DNS
 
 Functions of Layer 7 include:
 
@@ -47,6 +48,8 @@ Functions of Layer 7 include:
 ### 6 - PRESENTATION
 
 - Translates data to the appropriate format (between Application and Network formats) to be sent over the network.
+- Handles formatting, encryption, compression
+- Example: SSL/TLS encryption
 
 ---
 
@@ -67,6 +70,8 @@ Application developers work with the top layers of the OSI model to connect thei
 - Segments and reassembles data for communication between end hosts.
 - Breaks large pieces of data into smaller segments which can be more easily sent over the network and are less likely to cause transmission problems if errors occur.
 - Provides HOST-TO-HOST (end to end) communication
+- Protocols: TCP, UDP
+- Handles reliability, flow control, segmentation
 
 When Data from Layer 7-5 arrives, it receives a Layer 4 Header in the Transport layer.
 
@@ -82,6 +87,8 @@ This is called a SEGMENT.
 - Provides logical addressing (IP Addresses).
 - Provides path selection between source and destination
 - **ROUTERS** operate at Layer 3.
+- Protocol: IP
+- Devices: Routers
 
 When Data and the Layer 4 Header arrive in the Network Layer, it receives a Layer 3 Header.
 
